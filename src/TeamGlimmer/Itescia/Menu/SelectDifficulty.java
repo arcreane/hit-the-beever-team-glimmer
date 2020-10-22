@@ -9,7 +9,7 @@ public class SelectDifficulty {
     public static void main(String[] args) {
         int difSelector[];
         double difficultyArrayCopy[][]=Paramétrage.difficultyArray;
-        String nomDeLaDiff[]={"1: Facile : ","2: Moyen : ","3: Difficile : "};
+        String nomDeLaDiff[]={"Facile : ","Moyen : ","Difficile : "};
 
         System.out.println("Chose your difficulty :");
         for (int i =0;i<3;i++){
