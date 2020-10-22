@@ -9,11 +9,15 @@ public class SelectDifficulty {
     public static void main(String[] args) {
         int difSelector[];
         double difficultyArrayCopy[][]=Paramétrage.difficultyArray;
+        String nomDeLaDiff[]={"Facile : ","Moyen : ","Difficile : "};
 
         System.out.println("Chose your difficulty :");
-        for (int i =0;i<=difficultyArrayCopy[i].length;i++){
+        for (int i =0;i<3;i++){
+            System.out.print(nomDeLaDiff[i]);
             System.out.println(difficultyArrayCopy[i][0]+" colonnes "+difficultyArrayCopy[i][1]+" lignes "+difficultyArrayCopy[i][2]+" secondes");
         }
+
+        selectDifficulty();
 
     }
     public static void writeDifficultyLine(int dif){
