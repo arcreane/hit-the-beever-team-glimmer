@@ -1,2 +1,4 @@
-package TeamGlimmer.Itescia.Gameplay;public class scoreCount {
+package TeamGlimmer.Itescia.Gameplay;
+
+public class scoreCount {
 }
