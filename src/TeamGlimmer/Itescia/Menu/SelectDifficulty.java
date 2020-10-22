@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import TeamGlimmer.Itescia.Difficultés.Paramétrage;
 
-public class StartGame {
+public class SelectDifficulty {
 
     public static void main(String[] args) {
         int difSelector[];

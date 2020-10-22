@@ -11,10 +11,4 @@ public class Paramétrage {
 
     };
 
-
-
-    public static void main(String[] args) {
-
-
-    }
 }
