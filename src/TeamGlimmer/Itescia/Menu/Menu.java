@@ -1,4 +1,5 @@
 package TeamGlimmer.Itescia.Menu;
+
 import java.util.Scanner;
 
 public class Menu {
@@ -12,38 +13,38 @@ public class Menu {
     //exécuter la fonction demandée
     //si mauvaise réponse, redémarre menu
 
-        public static void main(String[] args){
+    public static void main(String[] args) {
+        System.out.print("\033[H\033[2J");
+        System.out.println("Bienvenue dans le jeu de la taupe :");
+        System.out.println("1 : Commencer le jeu");
+        System.out.println("2 : Les scores");
+        System.out.println("3 : Quit");
 
-            System.out.println("Bienvenue dans le jeu de la taupe :");
-            System.out.println("1 : Commencer le jeu");
-            System.out.println("2 : Les scores");
-            System.out.println("3 : Quit");
+        int numMenu;
+        Scanner userInput = new Scanner(System.in);
+        numMenu = userInput.nextInt();
 
-            int numMenu;
-            Scanner userInput = new Scanner(System.in);
-            numMenu = userInput.nextInt();
+        switch (numMenu) {
+            case 1:
+                //Lancement du jeu
+                SelectDifficulty.main(null);
+                break;
+            case 2:
+                //Aller vers les scores
+                //Score.main();
+                break;
+            case 3:
+                //Quitte le programme
+                Quit.quitSoft();
 
-            switch (numMenu){
-                case 1:
-                    //Lancement du jeu
-                    SelectDifficulty.main(null);
-                    break;
-                case 2:
-                    //Aller vers les scores
-                    //Score.main();
-                    break;
-                case 3:
-                    //Quitte le programme
-                    Quit.quitSoft();
-
-                    break;
-                default:
-                    System.out.println("Je n'ai pas compris votre demande");
-                    main(null);
-            }
-
-
+                break;
+            default:
+                System.out.println("Je n'ai pas compris votre demande");
+                main(null);
         }
+
+
     }
+}
 
 
