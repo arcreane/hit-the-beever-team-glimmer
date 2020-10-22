@@ -38,7 +38,7 @@ public class Menu {
                     break;
                 default:
                     System.out.println("Je n'ai pas compris votre demande");
-
+                    main(null);
             }
 
 
