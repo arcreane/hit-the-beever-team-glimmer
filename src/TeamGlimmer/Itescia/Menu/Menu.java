@@ -10,6 +10,7 @@ public class Menu {
 
     //scanner utilisateur
     //exécuter la fonction demandée
+    //si mauvaise réponse, redémarre menu
 
         public static void main(String[] args){
 
@@ -25,7 +26,7 @@ public class Menu {
             switch (numMenu){
                 case 1:
                     //Lancement du jeu
-                    StartGame.main();
+                    SelectDifficulty.main(null);
                     break;
                 case 2:
                     //Aller vers les scores
