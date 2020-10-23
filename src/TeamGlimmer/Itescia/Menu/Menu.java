@@ -1,5 +1,5 @@
 package TeamGlimmer.Itescia.Menu;
-
+//package TeamGlimmer.Itescia.Menu.Scores;
 import java.util.Scanner;
 
 public class Menu {
@@ -14,7 +14,7 @@ public class Menu {
     //si mauvaise réponse, redémarre menu
 
     public static void main(String[] args) {
-        System.out.print("\033[H\033[2J");
+
         System.out.println("Bienvenue dans le jeu de la taupe :");
         System.out.println("1 : Commencer le jeu");
         System.out.println("2 : Les scores");
@@ -31,7 +31,7 @@ public class Menu {
                 break;
             case 2:
                 //Aller vers les scores
-                //Score.main();
+                Scores.printHighScore();
                 break;
             case 3:
                 //Quitte le programme
