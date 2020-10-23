@@ -23,6 +23,7 @@ public class Mangerendgame {
         Scores.sortScores();
 
         Scores.printHighScore();
+
         Menu.main(args);
     }
 
