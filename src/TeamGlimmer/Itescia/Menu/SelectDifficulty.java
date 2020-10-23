@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 
 import TeamGlimmer.Itescia.Difficultés.Paramétrage;
+import TeamGlimmer.Itescia.Gameplay.GamePlayManager;
 
 public class SelectDifficulty {
 
@@ -18,6 +19,8 @@ public class SelectDifficulty {
         }
 
         selectDifficulty();
+
+        GamePlayManager.main(args);
 
     }
     public static void writeDifficultyLine(int dif){

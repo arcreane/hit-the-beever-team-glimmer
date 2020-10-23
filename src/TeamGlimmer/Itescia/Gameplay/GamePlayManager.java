@@ -24,14 +24,14 @@ public class GamePlayManager {
 
 
             System.out.flush();
-            //CreateBoard.main
+            CreateBoard.main(args);
             //instancier un board
 
             Scorecount.displayScore();
             System.out.println("Round Number : "+i);
 
-            int molePos[]=[CreateBoard.xTaupe,CreateBoard.yTaupe];
-            int molePos[]={3,4};
+            int molePos[]={CreateBoard.xTaupe,CreateBoard.yTaupe};
+            //int molePos[]={3,4};
             //placeholder value
 
             checkPlayerClick(molePos);

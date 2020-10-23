@@ -4,8 +4,8 @@ import java.lang.Math;
 
 public class CreateBoard {
 
-    public int xTaupe;
-    public int yTaupe;
+    public static int xTaupe;
+    public static int yTaupe;
 
     public static void main(String[] args) {
 
