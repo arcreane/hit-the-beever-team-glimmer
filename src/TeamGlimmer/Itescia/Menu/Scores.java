@@ -7,7 +7,9 @@ public class Scores {
     public static int[] highScore = {};
 
     public static int currentScore = 0;
-    public static void checkCurrentScore (){
+
+    public static void checkCurrentScore(){
+        
         if (highScore.length < 5){
             addHighScore(currentScore);
         } else if (currentScore > highScore[0]){
@@ -21,6 +23,7 @@ public class Scores {
      * @param x the new high score
      */
     public static void addHighScore(int x) {
+
         int n = highScore.length;
 
         int newarr[] = new int[n + 1];
@@ -32,7 +35,8 @@ public class Scores {
         Scores.highScore = newarr;
     }
 
-    public static void printHighScore() {
+
+    public static void printHighScore(){
 
         for (int i = highScore.length - 1; i >= 0; i--) {
             System.out.println(highScore[i]);
@@ -43,4 +47,7 @@ public class Scores {
     //trie les données dans le tableau
     //affiche les high scores
     //permet de revenir au menu principal
+
 }
+
+

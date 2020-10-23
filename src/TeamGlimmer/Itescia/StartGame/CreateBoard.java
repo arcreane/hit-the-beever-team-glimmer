@@ -29,8 +29,9 @@ public class CreateBoard {
 
         board[xTaupe][yTaupe]="M ";
 
-
+        System.out.println(" ");
         for (int i = 0; i < board.length; i++) {
+
             //board[i][0] = i + 1;
             System.out.println("");
 
@@ -59,19 +60,36 @@ public class CreateBoard {
             //board[0][j] = j + 1;
             System.out.println(board[0][j]);
 
+            board[i][0] = i + 1;
+            System.out.print(" " + board[i][0] + " ");
+
+        }
+
+        System.out.println("");
+
+        for (int j = 0; j < board.length; j++) {
+            board[0][j] = j + 1;
+            System.out.print(board[0][j] + " ");
+
+
             if (j == yTaupe) {
                 //molePlacement(xTaupe);
                 //System.out.print("M");
                 System.out.print(board[xTaupe][yTaupe]);
             }
 
+
         }*/
 
+                System.out.println("");
     }
 
-    private static void molePlacement(int decal) {
+
+
+
+    /*private static void molePlacement(int decal) {
         for (int i = 0; i < decal; i++)
             System.out.print(" ");
-    }
+    }*/
 
 }
