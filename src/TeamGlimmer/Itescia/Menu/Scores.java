@@ -4,7 +4,8 @@ import java.util.Collections;
 
 public class Scores {
 
-    public static int[] highScore = {};
+    public static int[] highScore = {8};
+
 
     public static int currentScore = 0;
 
@@ -32,7 +33,8 @@ public class Scores {
         }
         newarr[n] = x;
         Arrays.sort(newarr);
-        Scores.highScore = newarr;
+        //Scores.highScore = newarr;
+
     }
 
 
