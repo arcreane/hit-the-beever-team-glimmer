@@ -14,24 +14,24 @@ public class CreateBoard {
         xTaupe = (int) Math.floor(4*Math.random());
         yTaupe = (int) Math.floor(4*Math.random());
 
-
+        System.out.println(" ");
         for (int i = 0; i < board.length; i++) {
             board[i][0] = i + 1;
-            System.out.print(" " + board[i] + " ");
+            System.out.print(" " + board[i][0] + " ");
 
         }
 
-        System.out.println(" ");
+        System.out.println("");
 
         for (int j = 0; j < board.length; j++) {
             board[0][j] = j + 1;
-            System.out.println(board[j] + " ");
+            System.out.print(board[0][j] + " ");
 
             if (j == yTaupe) {
                 molePlacement(xTaupe);
                 System.out.print("M");
             }
-
+                System.out.println();
         }
 
     }
