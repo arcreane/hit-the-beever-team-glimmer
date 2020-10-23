@@ -9,6 +9,7 @@ public class Mangerendgame {
 
     public static String getName(){
 
+        System.out.println("Quel est votre nom ?");
         String playerName;
         Scanner enterName= new Scanner(System.in);
         playerName=enterName.nextLine();
@@ -17,8 +18,12 @@ public class Mangerendgame {
     }
     public static void main(String[] args) {
 
-        System.out.println("voila votre score"+ Scores.currentScore);
+        System.out.println("voila votre score : "+ Scores.currentScore);
+
+        Scores.sortScores();
+
         Scores.printHighScore();
+        Menu.main(args);
     }
 
 }

@@ -1,5 +1,6 @@
 package TeamGlimmer.Itescia.Gameplay;
 
+import TeamGlimmer.Itescia.Endgame.Mangerendgame;
 import TeamGlimmer.Itescia.Menu.Scores;
 import TeamGlimmer.Itescia.StartGame.CreateBoard;
 
@@ -22,24 +23,29 @@ public class GamePlayManager {
         int nbOfRounds = 5;
         int currentRoud =0;
 
-        for (int i=0;i<=nbOfRounds;i++){
+        for (int i=0;i<nbOfRounds;i++){
 
 
             System.out.flush();
+            System.out.println("CurrentScore : "+ Scores.currentScore);
+            System.out.println("Round Number : "+ currentRoud);
             CreateBoard.main(args);
             //instancier un board
 
-            System.out.println("CurrentScore : "+ Scores.currentScore);
-            System.out.println("Round Number : "+ currentRoud);
+
 
             int molePos[]={CreateBoard.xTaupe,CreateBoard.yTaupe};
-            System.out.println(molePos[0]);
-            System.out.println(molePos[1]);
+            //System.out.println(molePos[0]);
+            //System.out.println(molePos[1]);
             //int molePos[]={3,4};
             //placeholder value
 
             checkPlayerClick(molePos);
             currentRoud+=1;
+
+            if (currentRoud==nbOfRounds){
+                Mangerendgame.main(args);
+            }
         }
 
 

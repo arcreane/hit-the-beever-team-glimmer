@@ -31,6 +31,7 @@ public class Menu {
                 break;
             case 2:
                 //Aller vers les scores
+                Scores.sortScores();
                 Scores.printHighScore();
                 break;
             case 3:
