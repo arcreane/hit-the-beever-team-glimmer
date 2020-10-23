@@ -30,7 +30,7 @@ public class GamePlayManager {
             Scorecount.displayScore();
             System.out.println("Round Number : "+i);
 
-            //int molePos[]={CreateBoard.xTaupe,CreateBoard.yTaupe};
+            int molePos[]=[CreateBoard.xTaupe,CreateBoard.yTaupe];
             int molePos[]={3,4};
             //placeholder value
 
