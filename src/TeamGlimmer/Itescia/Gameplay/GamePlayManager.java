@@ -1,5 +1,6 @@
 package TeamGlimmer.Itescia.Gameplay;
 
+import TeamGlimmer.Itescia.Menu.Scores;
 import TeamGlimmer.Itescia.StartGame.CreateBoard;
 
 import java.io.Console;
@@ -19,6 +20,7 @@ public class GamePlayManager {
     public static void main(String[] args) {
 
         int nbOfRounds = 5;
+        int currentRoud =0;
 
         for (int i=0;i<=nbOfRounds;i++){
 
@@ -27,14 +29,17 @@ public class GamePlayManager {
             CreateBoard.main(args);
             //instancier un board
 
-            Scorecount.displayScore();
-            System.out.println("Round Number : "+i);
+            System.out.println("CurrentScore : "+ Scores.currentScore);
+            System.out.println("Round Number : "+ currentRoud);
 
             int molePos[]={CreateBoard.xTaupe,CreateBoard.yTaupe};
+            System.out.println(molePos[0]);
+            System.out.println(molePos[1]);
             //int molePos[]={3,4};
             //placeholder value
 
             checkPlayerClick(molePos);
+            currentRoud+=1;
         }
 
 
@@ -51,10 +56,11 @@ public class GamePlayManager {
 
         int inputPlayer[]={xInput,yInput};
 
-        if (inputPlayer==mole){
+        if (inputPlayer[0]==mole[0]&&inputPlayer[1]==mole[1]){
 
             System.out.println("That's a hit !");
-            Scorecount.increment();
+            Scores.currentScore+=1;
+            //Scorecount.increment();
 
         }
 

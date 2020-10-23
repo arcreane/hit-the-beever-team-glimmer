@@ -9,6 +9,8 @@ public class CreateBoard {
 
     public static void main(String[] args) {
 
+        System.out.flush();
+
         //int[][] board = new int[6][6];
         String [][]board = new String[][]{
                 {" ","1","2","3","4","5"},
