@@ -18,6 +18,7 @@ public class Mangerendgame {
     public static void main(String[] args) {
 
         System.out.println("voila votre score"+ Scores.currentScore);
+        Scores.printHighScore();
     }
 
 }
